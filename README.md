@@ -5,11 +5,11 @@ The purpose of this project was to display the masonry-type layout on the **olde
 Main assumptions:
 * the size of the masonry is related to the size of its container
 * all columns are equal in width
-* content is displayed from left to right, when placing the new image, the shortest column is filled
+* content is displayed from left to right; when placing the new image, the shortest column is filled
 * works without grid and flexbox
 * reacts to the browser resize
 
-Because I wanted this to be as simple as possible, I used jQuery instead of trying to find a vanila JavaScript methods that will work for all major, older browsers. 
+Because I wanted this to be as simple as possible, I used jQuery instead of finding vanilla JavaScript methods that will work for all major, older browsers. 
 
 Screenshot of the `index.html` demo:
 
@@ -34,8 +34,8 @@ In the `js/masonry.js` set the configuration variables if needed:
 
 ![Configuration](photos/config.png "Configuration")
 
-The `defaultWidth` is the default width of the colum. The number of columns and the item sizes will be calculated based on this value. 
+The `defaultWidth` is the default width of the column. The number of columns and the item sizes are calculated based on this value. 
 
 The `distance` is the distance between items (in pixels).
 
-The `containerLookup` is the jQuery lookup for the container element. The number of columns and positions of items are calculated based on the width of the element. 
+The `containerLookup` is the jQuery lookup for the container element. The number of columns and positions of items is calculated based on the width of the container. 
