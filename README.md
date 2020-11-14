@@ -11,7 +11,9 @@ Main assumptions:
 
 Because I wanted this to be as simple as possible, I used jQuery instead of trying to find a vanila JavaScript methods that will work for all major, older browsers. 
 
----
+Screenshot of the `index.html` demo:
+
+![Masonry demo](photos/demo.png "Masonry demo")
 
 ## How to use
 
@@ -19,7 +21,7 @@ Place the container and masonry items in your HTML file like this:
 
 ![HTML contents](photos/html.png "HTML contents")
 
-Remember to load `jQuery` and `masonry.js` in your HTML file.
+The `masonry-text` element is optional. Remember to load `jQuery` and `masonry.js` in your HTML file.
 
 ```
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
