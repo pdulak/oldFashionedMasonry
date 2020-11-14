@@ -18,7 +18,7 @@ function findShortestColumn(columnsHeight, numberOfColumns) {
     return shortest;
 }
 
-function findLongColumnHeight(columnsHeight, numberOfColumns) {
+function findLongestColumnHeight(columnsHeight, numberOfColumns) {
     var longest = 0;
     var longestValue = 0;
     for (var i = 0; i < numberOfColumns; i++) {
@@ -58,13 +58,13 @@ function positionGridImages() {
 
         $(this).css('left', leftToSet + 'px').css('top', topToSet + 'px');
 
-        // save tne new column height for the column that was filled with this item
+        // save column height for the column that was filled with this item
         columnsHeight[columnToFill] += distance + $(this).height();
     })
 
     // set the size of the whole masonry
     $('.masonry').height(
-        (findLongColumnHeight(columnsHeight, numberOfColumns) + distance) + 'px'
+        (findLongestColumnHeight(columnsHeight, numberOfColumns) + distance) + 'px'
     );
 
     savedWidth = containerWidth;

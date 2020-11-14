@@ -9,7 +9,7 @@ Main assumptions:
 * works without grid and flexbox
 * reacts to the browser resize
 
-Because I wanted this to be as simple as possible, I used jQuery instead of finding vanilla JavaScript methods that will work for all major, older browsers. 
+Because I wanted this to be as simple as possible, I used jQuery instead of finding vanilla Javascript methods that will work for all major, older browsers. 
 
 Screenshot of the `index.html` demo:
 
