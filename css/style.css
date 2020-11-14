@@ -1,0 +1,51 @@
+body {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+body * {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.masonry {
+    height: 1px;
+    overflow: hidden;
+    position: relative;
+}
+
+.masonry-item {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+}
+
+.masonry-item img {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.masonry-item img:hover {
+    transform: scale(1.1);
+}
+
+.masonry-item .masonry-text {
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.5s;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 3px;
+    display: block;
+}
+
+.masonry-item:hover .masonry-text {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.55);
+}
